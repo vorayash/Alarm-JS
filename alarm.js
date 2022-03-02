@@ -14,7 +14,7 @@ const setAlarm = () => {
     console.log(timeout);
 
 
-    if (timeout < 0) {
+    if (timeout < 0 || userTime=="Invalid Date") {
         userInput.classList.add('is-invalid');
         userInput.classList.remove('is-valid');
 
