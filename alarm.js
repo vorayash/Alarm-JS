@@ -33,7 +33,7 @@ const setAlarm = () => {
             audio.pause();
             audio.currentTime = 0;
             document.getElementById("stopAlarm").disabled = true;
-        }, 1000);
+        }, timeout+60000);
     }
 
 }
